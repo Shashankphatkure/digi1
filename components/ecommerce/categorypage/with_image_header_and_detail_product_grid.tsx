@@ -230,7 +230,7 @@ const footerNavigation = {
   ],
 }
 
-function classNames(...classes) {
+function classNames(...classes: string[]) {
   return classes.filter(Boolean).join(' ')
 }
 
@@ -701,7 +701,7 @@ export default function Categorypage() {
               <div className="hidden lg:block">
                 <form className="space-y-10 divide-y divide-gray-200">
                   {filters.map((section, sectionIdx) => (
-                    <div key={section.name} className={sectionIdx === 0 ? null : 'pt-10'}>
+                    <div key={section.name} className={sectionIdx === 0 ? '' : 'pt-10'}>
                       <fieldset>
                         <legend className="block text-sm font-medium text-gray-900">{section.name}</legend>
                         <div className="space-y-3 pt-6">
