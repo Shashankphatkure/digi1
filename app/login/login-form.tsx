@@ -28,7 +28,7 @@ export default function LoginForm({ session }: { session: Session | null }) {
       email,
       password,
     })
-    router.refresh()
+    router.push('/orderhistory')
   }
 
   const handleSignOut = async () => {

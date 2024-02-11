@@ -473,7 +473,7 @@ export default function Ecommerceheader() {
                       </div>
 
                       <div className="flex">
-                        <a href="#" className="-m-2 p-2 text-gray-400 hover:text-gray-500">
+                        <a href="/login" className="-m-2 p-2 text-gray-400 hover:text-gray-500">
                           <span className="sr-only">Account</span>
                           <UserIcon className="h-6 w-6" aria-hidden="true" />
                         </a>
@@ -483,7 +483,7 @@ export default function Ecommerceheader() {
                     <span className="mx-4 h-6 w-px bg-gray-200 lg:mx-6" aria-hidden="true" />
 
                     <div className="flow-root">
-                      <a href="#" className="group -m-2 flex items-center p-2">
+                      <a href="/cart" className="group -m-2 flex items-center p-2">
                         <ShoppingCartIcon
                           className="h-6 w-6 flex-shrink-0 text-gray-400 group-hover:text-gray-500"
                           aria-hidden="true"
