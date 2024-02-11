@@ -82,7 +82,7 @@ const navigation = {
   ],
   pages: [
     { name: 'About', href: '/aboutus' },
-    { name: 'Acc Settings', href: '/accountsettings' },
+    { name: 'A Settings', href: '/accountsettings' },
     { name: 'cart', href: '/cart' },
     { name: 'checkout', href: '/checkout' },
     { name: 'O-history', href: '/orderhistory' },
@@ -90,6 +90,7 @@ const navigation = {
     { name: 'product', href: '/product' },
     { name: 'shop', href: '/shop' },
     { name: 's-locator', href: '/storelocator' },
+    { name: 'blog', href: '/blog' },
   ],
 }
 const products = [
