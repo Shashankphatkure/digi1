@@ -1,9 +1,9 @@
-import Adminshell from "@/components/applicationui/applicationshells/dark_sidebar";
+import AdminOrder from "@/components/applicationui/page/stackedorders";
 
 export default function page() {
   return (
     <>
-    <Adminshell/>
+    <AdminOrder/>
     </>
   );
 }
