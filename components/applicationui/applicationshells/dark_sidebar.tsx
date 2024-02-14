@@ -244,7 +244,7 @@ export default function Adminshell() {
         </div>
 
         <main className="py-10 lg:pl-72">
-          <div className="px-4 sm:px-6 lg:px-8"><Orderstable/></div>
+          <div className="px-4 sm:px-6 lg:px-8"><Productstable/></div>
         </main>
       </div>
     </>
