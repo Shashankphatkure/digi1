@@ -1,5 +1,11 @@
 "use client"
 
+type Statuses = {
+  Paid: string;
+  Withdraw: string;
+  Overdue: string;
+};
+
 import { Fragment, useState } from 'react'
 import { Dialog, Menu, Transition } from '@headlessui/react'
 import {
@@ -30,7 +36,7 @@ const stats = [
   { name: 'Outstanding invoices', value: '$245,988.00', change: '-1.39%', changeType: 'positive' },
   { name: 'Expenses', value: '$30,156.00', change: '+10.18%', changeType: 'negative' },
 ]
-const statuses: statuses = {
+const statuses: Statuses = {
   Paid: 'text-green-700 bg-green-50 ring-green-600/20',
   Withdraw: 'text-gray-600 bg-gray-50 ring-gray-500/10',
   Overdue: 'text-red-700 bg-red-50 ring-red-600/10',
@@ -234,7 +240,7 @@ export default function AdminOrder() {
                                       </div>
                                       <div
                                         className={classNames(
-                                          statuses[transaction.status],
+                                          statuses[transaction.status as keyof typeof statuses], // Add type assertion here
                                           'rounded-md py-1 px-2 text-xs font-medium ring-1 ring-inset'
                                         )}
                                       >
@@ -357,7 +363,7 @@ export default function AdminOrder() {
                           <div className="font-medium text-gray-900">{client.lastInvoice.amount}</div>
                           <div
                             className={classNames(
-                              statuses[client.lastInvoice.status],
+                              statuses[client.lastInvoice.status as keyof typeof statuses], // Fix: Cast the status value to keyof typeof statuses
                               'rounded-md py-1 px-2 text-xs font-medium ring-1 ring-inset'
                             )}
                           >
