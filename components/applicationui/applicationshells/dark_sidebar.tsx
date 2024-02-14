@@ -12,7 +12,9 @@ import {
   UsersIcon,
   XMarkIcon,
 } from '@heroicons/react/24/outline'
-import Customerstable from '../lists/tables/with_avatars_and_multi_line_content'
+import Customerstable from '../lists/tables/customers'
+import Orderstable from '../lists/tables/orders'
+import Productstable from '../lists/tables/products'
 
 const navigation = [
   { name: 'Dashboard', href: '/admin', icon: HomeIcon, current: false },
@@ -28,7 +30,7 @@ const teams = [
   { id: 3, name: 'add new customer', href: '#', initial: 'C', current: false },
 ]
 
-function classNames(...classes) {
+function classNames(...classes: string[]) {
   return classes.filter(Boolean).join(' ')
 }
 
@@ -242,7 +244,7 @@ export default function Adminshell() {
         </div>
 
         <main className="py-10 lg:pl-72">
-          <div className="px-4 sm:px-6 lg:px-8"><Customerstable/></div>
+          <div className="px-4 sm:px-6 lg:px-8"><Orderstable/></div>
         </main>
       </div>
     </>
