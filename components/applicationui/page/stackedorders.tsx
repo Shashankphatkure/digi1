@@ -1,4 +1,4 @@
-"use client"
+'use client'
 
 type Statuses = {
   Paid: string;
@@ -19,12 +19,7 @@ import {
 import { BellIcon, XMarkIcon } from '@heroicons/react/24/outline'
 import Ecommerceheader from '@/components/marketing/elements/header/with_left_aligned_nav'
 
-const navigation = [
-  { name: 'Home', href: '#' },
-  { name: 'Invoices', href: '#' },
-  { name: 'Clients', href: '#' },
-  { name: 'Expenses', href: '#' },
-]
+
 const secondaryNavigation = [
   { name: 'Last 7 days', href: '#', current: true },
   { name: 'Last 30 days', href: '#', current: false },
@@ -125,7 +120,7 @@ function classNames(...classes: string[]) {
 
 export default function AdminOrder() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
-
+  
   return (
     <>
       
